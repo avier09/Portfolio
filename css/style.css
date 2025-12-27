@@ -74,16 +74,19 @@ header.sticky {
     gap: 20px;
 }
 
-.floating-box img {
-    height: 24px;
-    width: auto;
-    opacity: 0.6;
-    transition: opacity 0.3s;
+/* UPDATED: Styles for FontAwesome Icons instead of Images */
+.floating-box i {
+    font-size: 24px;       /* Sets the size (replaces height) */
+    color: #2c3e50;        /* Dark blue color to match your header text */
+    opacity: 0.6;          /* Slight transparency */
+    transition: all 0.3s;  /* Smooth hover animation */
+    cursor: pointer;
 }
 
-.floating-box img:hover {
+.floating-box i:hover {
     opacity: 1;
-    transform: scale(1.1); /* Subtle grow effect */
+    transform: scale(1.2); /* Grows slightly larger on hover */
+    color: #0056b3;        /* Turns bright blue on hover */
 }
 
 /* =========================================
